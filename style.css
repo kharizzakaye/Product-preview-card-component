@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body
+{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card
+{
+    border: none;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.mobile-card
+{
+    width: 345px;
+}
+
+.desktop-card
+{
+    width: 600px;
+}
+
+.card-img-top
+{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.img-fluid
+{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card-title
+{
+    font-family: Fraunces, Courier, monospace;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+}
+
+.mobile-title
+{
+    font-size: 28px;
+}
+
+.desktop-title
+{
+    font-size: 34px;
+}
+
+.desktop-text
+{
+    margin-top: 25px;
+}
+
+.desktop-button
+{
+    margin-top: 10px;
+}
+
+.btn
+{
+    padding: 13px;
+    border-radius: 8px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+
+    font-family: Montserrat, Courier, monospace;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+p
+{
+    font-family: Montserrat, Courier, monospace;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%)
+}
+
+.discounted-amount
+{
+    font-family: Fraunces, Courier, monospace;
+    font-weight: 700;
+    font-size: 28px;
+    color: hsl(158, 36%, 37%);
+    padding: 0px;
+    margin: 0px;
+}
+
+.title-top
+{
+    letter-spacing: 5px;
+}
+
+.original-amount
+{
+    text-decoration: line-through;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 12px;
+}
+
+.card-body
+{
+    padding: 25px;
+}
+
+.btn:hover
+{
+    background-color: #013220;
+}
+
+
+@media only screen and (min-width: 801px) {
+    .mobile-design
+    {
+        visibility: hidden;
+    }
+
+    .desktop-design
+    {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .mobile-design
+    {
+        visibility: visible;
+    }
+
+    .desktop-design
+    {
+        visibility: hidden;
+    }
+}
